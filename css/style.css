@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+header{
+    display: inline-block;
+    margin-top: 47px;
+    margin-left: 42px;
+}
+nav a{
+    margin-left: 32px;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+}
+button{
+    margin-left: 32px;
+    width: 74px;
+    height: 37px;
+    border-radius: 15%;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+main{
+    display: flex;
+    margin-top: 90px;
+}
+aside{
+    display: inline-block;
+    align-items: center;
+    width: 400px;
+    height: 240px;
+}
+h1{
+    color: #161A49;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.text-main{
+    margin-top: 160px;
+}
+#button-text{
+    box-sizing: border-box;
+    border: none;
+    width: 90px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background: transparent;
+    color: green;
+}
+img{
+    width: 533.834px;
+    height: 466.9px;
+    margin-left: 100px;
+}
+@media screen and ( max-width: 750px){
+    
+    *{
+        max-width: 100%;
+    }
+    body{
+        overflow-x: hidden;
+        align-items: center;
+    }
+    a{
+        display: none;/*jvyvytv*/
+    }
+    .nav{
+        position: absolute;/*para que ele fique adaptavel, ele tem que ficar em posição absoluta para que modifique sua posição em porcentagem, assim ela vai ficar na porcentagem independente do tamanho da tela, fica a dica Agner*/
+        margin: 0 10px 0;
+
+        left: 70%;/* conseguir com que ele se adapte ao tamanho da tela assim, mas agora ele não fica do lado da tela que eu quero, ele fica na esquerda ao invés da direita*/
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;/*para quebra elementos quando a tela for pequena*/
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        padding: 0 20px;
+    }
+    img{
+        display: block;
+        position: relative;
+        margin-left: 3px;
+        height: auto;
+        max-width: 90%;
+        top: 170px;
+    }
+    aside{
+        max-width: 90%;
+        display: block;
+        align-items: center;
+    }
+    .text-main{
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        margin: 250px auto 0;
+        padding: 0 20px;
+        bottom: 600px;
+    }
+    h1{
+        padding-top: 30px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+    }
+    #button-text{
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 100px;
+        font-size: 17px;
+    }
+}
