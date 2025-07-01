@@ -23,6 +23,7 @@ button{
     background-color: green;
     color: white;
 }
+
 main{
     display: flex;
     margin-top: 90px;
@@ -51,6 +52,11 @@ h1{
     background: transparent;
     color: green;
 }
+#button-text:active{
+    background-color: green;
+    color: red;
+    cursor: pointer;
+}
 img{
     width: 533.834px;
     height: 466.9px;
@@ -73,6 +79,12 @@ img{
         margin: 0 10px 0;
 
         left: 70%;/* conseguir com que ele se adapte ao tamanho da tela assim, mas agora ele não fica do lado da tela que eu quero, ele fica na esquerda ao invés da direita*/
+    }
+    .nav:hover{
+        opacity: 0.8;/*para que ele fique mais transparente*/
+    }
+    .nav:active{
+        opacity: 0.6;
     }
     main{
         display: flex;
